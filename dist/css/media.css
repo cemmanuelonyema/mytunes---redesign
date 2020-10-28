@@ -1,0 +1,203 @@
+
+
+
+@media (max-width:600px){
+
+    .nav-list{
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color:  var(--brand-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+
+    .nav-list li{ margin: 10px 0; }
+
+.nav-list li a{
+      display: inline-block;
+      font-size: 2rem;
+      padding: 1.5rem 2rem;
+      transition: all 0.3s;
+}
+
+.nav-list li a:hover{
+      background-color: var(--white);
+      color: var(--brand-black);
+      transform: translateY(-10px);
+}
+
+.hamburger{
+      display: flex;
+      z-index: 999;
+}
+
+#hamburger-toggle:checked ~ .nav-list{ transform: none; }
+
+#hamburger-toggle:checked ~ .hamburger .bar::before{ transform: rotate(45deg); }
+
+#hamburger-toggle:checked ~ .hamburger .bar{ background-color: transparent; }
+
+#hamburger-toggle:checked ~ .hamburger .bar::after{ transform: rotate(-45deg); }
+
+}  /* MEDIA QUERY END */
+
+
+/*--------------------------------------------------*/
+/*---- MEDIA QURIES----*/
+/*--------------------------------------------------*/
+.body{
+      height: 93vh;
+  }
+  
+  .main-sign-in{
+    /*  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.57), rgba(4, 31, 129, 0.446));*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+      height: inherit;
+  }
+  
+  .sign-in{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  .sign-in span{
+      font-size: 1.7rem;
+  }
+  
+  .sign-in-box{
+      background-color: var(--white);
+      box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.22);
+      border-radius: 5rem;
+      padding: 5rem;
+      max-width: 90%;
+      margin: 10rem auto;
+  }
+  
+  .sign-in-box h1{
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+  }
+  
+  .text{
+      margin-bottom: 4rem;
+  }
+  
+  .tune-link{
+      color: var(--primary-color);
+      font-size: 1.5rem;
+  }
+  
+  
+  .sign-in-box img{
+      width: 50%;
+      border-radius: 50%;
+      offset: 1rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*--------------------------------------------------*/
+  /*---- MEDIA QURIES----*/
+  /*--------------------------------------------------*/
+    
+    @media screen and (max-width: 770px) {
+  
+      
+      html{
+          font-size: 55%;
+      }
+  
+      .hide-on-small {
+        display: none;
+      }
+  
+      .heading-primary{
+          margin: 1rem 0;
+      }
+  
+      .heading-primary-main{
+          font-size: 7rem;
+      }
+  
+      .heading-primary-sub{
+          font-size: 2rem;
+      }
+          
+      
+      .container{
+      padding: 0 4%;
+      }
+      
+      .section-gift{
+      padding: 5rem 0 2rem;
+      }
+      
+      
+      .footer-col{
+      
+      }
+  
+      .footer-link{
+          font-size: 1rem;
+      }
+      
+      .footer-copy{
+      font-size: 1.1rem;    
+  }
+  
+  
+  h4{
+      font-size: 1.3rem;
+  }
+          
+      .flex-container{
+          flex-direction: column;
+      }
+  
+      .content {
+          text-align: center;
+      }
+          
+      img{
+          width: 85%;
+      }
+    
+  
+  
+  }
+  @media screen and (max-width: 1023px) {
+  
+      .gift-container{
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+      }
+      .content{
+  
+          text-align: center;
+  
+      }
+  
+      .content hr{
+          visibility: hidden;
+  
+     
+      }
+  
+  
+  }
