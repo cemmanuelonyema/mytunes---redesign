@@ -6,33 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <meta name="description" content=" myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC." />
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./dist/css/style.css">
 
     <title>mytunes | Sign-in</title>
 </head>
 <body>
-    <main class="main-sign-in">
-        <div class="container flex">
-
-            <div class="sign-in-box">
-                <h1> myTunes </h1>
-                <div class="text">
-                    <p>No matter what you go through, no matter how you feel, music always helps.</p>
+    <div class="sign-in-container">
+        <div class="wrapper-left">
+            <div class="wrap">
+                <div class="head">
+                    <h1>Log into your <br> <span>myTunes </span> account </h1>
                 </div>
-                <a href="./home.html" class="btn btn-primary"> Listen to some  Tunes  now</a>
-                 <a href="./home.html" class="btn btn-facebook"><i class="fab fa-twitter"></i>  Sign-in with facebook</a>
+        
+                <form class="form">
+                    <div class="form-group">
+                        <label for="email">Email <i class="fas fa-envelope"></i></label>
+                      </i><input type="email" name="email" required>   
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password <i class="fas fa-lock"></i></label>
+                     <input type="email" name="password" required >
+                    </div>
+                    <div class="links">
+                        <a href="./home.html" class="btn btn-primary btn-animate"> Login  <i class="fas fa-long-arrow-alt-right"></i> </a>
+                    </div>
+                </form>
             </div>
+            
+            <span>Already have an account? <a href="./home.html" class="tune-link">Tune in </a> </span>
 
-            <span>Already have an account? <a href="./home.html" class="tune-link">Tune in</a> </span>
         </div>
-    </main>
-    <footer class="footer-sign-in">
-        <div class="container u-center">
-            <p class="footer-copy">Copyright  &copy; 2020 orange myTunes. All rights reserved</p>
-        </div>
-    </footer>
 
+        <div class="wrapper-right hide-on-medium">
+            <div class="right">
+                <h1> No matter what you go through,  no matter how you feel, music always helps. </h1>
+                <a href="./home.html" class="btn btn-primary"> Listen to some  Tunes  now</a>
+            </div>
+        </div>
+
+    </div>
+   
     <script src="./dist/js/script.js"></script>
 </body>
 </html>
