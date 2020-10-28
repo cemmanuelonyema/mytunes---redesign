@@ -180,11 +180,11 @@ i{
 }
 
 .wrapper-right{
-      align-items: center;
-      justify-content: center;
-      flex: 1;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.618);
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.618);
 }
 
 
@@ -267,10 +267,6 @@ input{
           flex: 6;
     }
 }
-
-
-
-
 
 
 /*--------------------------------------------------*/
